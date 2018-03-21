@@ -26,10 +26,10 @@ public class LeerArchivo {
         try {
             /*Apertura del fichero y creacion de BufferedReader para poder
             *hacer una lectura comoda (disponer del metodo readLine()).
-            *archivo = new File("entrada.txt");
-            @method FileReader(archivo) constructor de la clase FileReader
-            @param archivo = ruta del archivo
+            *@method FileReader(archivo) constructor de la clase FileReader
+            *@param archivo = ruta del archivo
             */
+            archivo = new File("entrada.txt");
             try {
                 fr = new FileReader(archivo);
             }
