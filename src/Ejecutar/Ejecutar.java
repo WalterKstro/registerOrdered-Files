@@ -46,7 +46,7 @@ public class Ejecutar {
             System.out.println("************ 1-------- INGRESAR DATOS    **********");
             System.out.println("************ 2-------- LEER ARHIVO       **********");
             System.out.println("************ 3-------- ESCRIBIR ARCHIVO  **********");
-            System.out.println("************ 4-------- ORDENAR           **********");
+            System.out.println("************ 4-------- ORDENAR POR CARNÉ **********");
             System.out.println("************ 5-------- SALIR             **********");
             System.out.println("***************************************************");
             System.out.println("\n");
@@ -65,6 +65,8 @@ public class Ejecutar {
                 case 2: lectura.Lectura();
                 break;
                 case 3:escribir.EsribirDatos();
+                break;
+                case 4:
                 break;
                 case 5: 
                     if(opt==5){
