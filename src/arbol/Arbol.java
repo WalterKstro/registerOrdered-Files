@@ -12,6 +12,9 @@ public class Arbol {
     public String apellido;
     public String carrera;
     Scanner txt = new Scanner(System.in);
+    Nodo raiz = new Nodo();
+    Nodo izquierda = new Nodo();
+    Nodo derecha = new Nodo();
 
     public void IngresarDatos() {
         System.out.print("  INGRESE SU CARNÉ: ");

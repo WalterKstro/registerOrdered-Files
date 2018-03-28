@@ -64,11 +64,11 @@ public class Ejecutar {
              *Case de opciones de seleccion
              */
             switch (opt) {
-                case 1:arbol.IngresarDatos();
+                case 1:escribir.EsribirDatos();
                 break;
                 case 2: lectura.Lectura();
                 break;
-                case 3:escribir.EsribirDatos();
+                case 3:
                 break;
                 
                 case 5: 
