@@ -9,11 +9,13 @@ package Ejecutar;
 /*
 *Importacion de librerias
 */
-import arbol.Arbol;
 
-import escritura.EsribirArchivo;
+
+
+import escritura.EscribirArchivo;
 import java.util.Scanner;
 import lectura.LeerArchivo;
+import umg.gt.order.OrdenarArchivo;
 
 public class Ejecutar {
     /*
@@ -27,9 +29,10 @@ public class Ejecutar {
         /*
         *Instanciacion de los objetos lectura y escribir
         */
-        Arbol arbol = new Arbol();
+        EscribirArchivo escribir = new EscribirArchivo();
         LeerArchivo lectura = new LeerArchivo();
-        EsribirArchivo escribir = new EsribirArchivo();
+        OrdenarArchivo order = new OrdenarArchivo();
+
         
          /*
         *Captura de valores por teclado
@@ -64,13 +67,14 @@ public class Ejecutar {
              *Case de opciones de seleccion
              */
             switch (opt) {
-                case 1:escribir.EsribirDatos();
+                case 1:escribir.Datos();
                 break;
                 case 2: lectura.Lectura();
                 break;
-                case 3:
+                case 3:escribir.EsribirDatos();
                 break;
-                
+                case 4: order.Ordenar();
+                break;
                 case 5: 
                     if(opt==5){
                     System.out.print("ESTA SEGURO DE SALIR? S/N: ");

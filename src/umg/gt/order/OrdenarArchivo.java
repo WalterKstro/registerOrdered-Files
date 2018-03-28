@@ -9,8 +9,8 @@ import java.util.List;
 
 public class OrdenarArchivo {
 
-    public static void main(String[] args) {
-        String filename = "productos.txt";
+  public void Ordenar(){
+      String filename = "entrada.txt";
         String linea = null;
         String[] datos = null;
         List<Producto> productos = new ArrayList<Producto>();
@@ -22,11 +22,7 @@ public class OrdenarArchivo {
             while ((linea = br.readLine()) != null) {
                 // cada linea tiene los datos para crear un producto
                 datos = linea.split(" ");
-                producto = new Producto(
-                        Integer.parseInt(datos[0]),
-                        datos[1],
-                        Double.parseDouble(datos[2]),
-                        Integer.parseInt(datos[3]));
+                producto = new Producto(datos[0],datos[1],datos[2],datos[3]);
                 // agregamos el producto a la lista de productos
                 productos.add(producto);
             }
@@ -48,27 +44,68 @@ public class OrdenarArchivo {
 // Notar que estamos implementado Comparable
 class Producto implements Comparable<Producto> {
 
-    int id;
+    String carne;
     String nombre;
-    double precio;
-    int inventario;
+    String apellido;
+    String carrera;
 
-    public Producto(int id, String nombre,
-            double precio, int inventario) {
-        this.id = id;
+    public Producto(String carne, String nombre, String apellido, String carrera) {
+        this.carne = carne;
         this.nombre = nombre;
-        this.precio = precio;
-        this.inventario = inventario;
+        this.apellido = apellido;
+        this.carrera = carrera;
     }
 
+    public String getCarne() {
+        return carne;
+    }
+
+    public void setCarne(String carne) {
+        this.carne = carne;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getCarrera() {
+        return carrera;
+    }
+
+    public void setCarrera(String carrera) {
+        this.carrera = carrera;
+    }
+
+    
+
     public String toString() {
-        return id + " " + nombre + " "
-                + precio + " " + inventario;
+        return carne + " " + nombre + " "
+                + apellido + " " + carrera;
     }
 
     // Este metodo es el que nos permite comparar
     // entre productos y de esta forma puedan ser ordenados.
     public int compareTo(Producto p) {
-        return id - p.id;
-    }
+        int resultado;
+        resultado = p.getNombre().compareTo(nombre);
+        if(resultado == 0){
+            resultado = p.getApellido().compareTo(apellido);
+            if(resultado == 0){
+                resultado = p.getCarne().compareTo(carne);
+            }
+        }
+        return resultado;
+  }
 }
