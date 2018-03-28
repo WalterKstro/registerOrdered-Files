@@ -9,6 +9,8 @@ package Ejecutar;
 /*
 *Importacion de librerias
 */
+import arbol.Arbol;
+
 import escritura.EsribirArchivo;
 import java.util.Scanner;
 import lectura.LeerArchivo;
@@ -20,10 +22,12 @@ public class Ejecutar {
     *@return void
     */
     public static void main(String[] args) {
+        
       
         /*
         *Instanciacion de los objetos lectura y escribir
         */
+        Arbol arbol = new Arbol();
         LeerArchivo lectura = new LeerArchivo();
         EsribirArchivo escribir = new EsribirArchivo();
         
@@ -60,14 +64,13 @@ public class Ejecutar {
              *Case de opciones de seleccion
              */
             switch (opt) {
-                case 1:escribir.IngresarDatos();
+                case 1:arbol.IngresarDatos();
                 break;
                 case 2: lectura.Lectura();
                 break;
                 case 3:escribir.EsribirDatos();
                 break;
-                case 4:
-                break;
+                
                 case 5: 
                     if(opt==5){
                     System.out.print("ESTA SEGURO DE SALIR? S/N: ");
@@ -87,4 +90,6 @@ public class Ejecutar {
         } while (condicion);
 
     }
+    
+  
 }

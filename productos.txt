@@ -1,0 +1,4 @@
+555 Producto1 200 3
+333 Producto2 300 1
+222 Producto3 400 2
+111 Producto4 150 5

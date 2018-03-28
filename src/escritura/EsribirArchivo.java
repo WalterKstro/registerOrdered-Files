@@ -33,6 +33,7 @@ public class EsribirArchivo {
         apellido = txt.nextLine();
         System.out.print(" INGRESE SU CARRERA: ");
         carrera = txt.nextLine();
+        
     }
 
     /*
