@@ -16,7 +16,8 @@ import gt.umg.esritura.EscribirArchivo;
 
 import java.util.Scanner;
 import gt.umg.lectura.LeerArchivo;
-import umg.gt.order.OrdenarArchivo;
+import gt.umg.ordenacion.lectura.Lectura;
+
 
 public class Ejecutar {
     /*
@@ -32,7 +33,7 @@ public class Ejecutar {
         */
         EscribirArchivo escribir = new EscribirArchivo();
         LeerArchivo lectura = new LeerArchivo();
-        OrdenarArchivo order = new OrdenarArchivo();
+        Lectura lecturaorder = new Lectura();
 
         
          /*
@@ -54,7 +55,7 @@ public class Ejecutar {
             System.out.println("************ 1-------- INGRESAR DATOS    **********");
             System.out.println("************ 2-------- LEER ARHIVO       **********");
             System.out.println("************ 3-------- ESCRIBIR ARCHIVO  **********");
-            System.out.println("************ 4-------- ORDENAR POR NOMBRE**********");
+            System.out.println("************ 4-------- ORDENAR POR CARNE **********");
             System.out.println("************ 5-------- SALIR             **********");
             System.out.println("***************************************************");
             System.out.println("\n");
@@ -74,7 +75,7 @@ public class Ejecutar {
                 break;
                 case 3:escribir.EsribirDatos();
                 break;
-                case 4:order.Ordenar();
+                case 4:lecturaorder.LecturaArchivo();
                 break;
                 case 5: 
                     if(opt==5){
