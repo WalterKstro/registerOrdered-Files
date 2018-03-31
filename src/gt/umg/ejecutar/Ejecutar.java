@@ -53,14 +53,13 @@ public class Ejecutar {
              *Inicializacion del menu5
              */
             System.out.println("\n");
-            System.out.println("***************************************************");
-            System.out.println("************ 1-------- INGRESAR DATOS    **********");
-            System.out.println("************ 2-------- LEER ARHIVO       **********");
-            System.out.println("************ 3-------- ESCRIBIR ARCHIVO  **********");
-            System.out.println("************ 4-------- ORDENAR POR CARNE **********");
-            System.out.println("************ 5-------- COPIAR CARNE      **********");
-            System.out.println("************ 6-------- SALIR             **********");
-            System.out.println("***************************************************");
+            System.out.println("**********************************************************");
+            System.out.println("************ 1-------- REGISTRAR ESTUDIANTES    **********");
+            System.out.println("************ 2-------- ALMACENAR ESTUDIANTES    **********");
+            System.out.println("************ 3-------- VER REGISTRO ESTUDIANTES **********");
+            System.out.println("************ 4-------- ORDENAR POR CARNE        **********");
+            System.out.println("************ 5-------- SALIR                    **********");
+            System.out.println("**********************************************************");
             System.out.println("\n");
             
             
