@@ -42,11 +42,11 @@ public class OrderGuardar {
             }
             br.close();
             // imprimir archivo en orden original
-            System.out.println("Elementos originales:");
+            System.out.println("REGISTROS ORIGINALES:");
             System.out.println(estudiantes);
             Collections.sort(estudiantes);
             // imprimir archivo ordenado
-            System.out.println("Elementos ordenados:");
+            System.out.println("REGISTROS ORDENADOS:");
             System.out.println(estudiantes);
             FileWriter escribir = new FileWriter(f_salida, true);
             for(Estudiantes e:estudiantes){

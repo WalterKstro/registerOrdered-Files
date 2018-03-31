@@ -61,7 +61,7 @@ public class EscribirArchivo {
                 *Se cierra el archivo
                  */
                 escribir.close();
-                System.out.println("ARCHIVO DATOS REGISTRADOS EXITOSAMENTE");
+                System.out.println("ARCHIVO: DATOS REGISTRADOS EXITOSAMENTE");
                 /*
                 *@exception IOException ERROR: en el registro de los datos
                  */
