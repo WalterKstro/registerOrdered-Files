@@ -16,6 +16,7 @@ import gt.umg.esritura.EscribirArchivo;
 
 import java.util.Scanner;
 import gt.umg.lectura.LeerArchivo;
+import gt.umg.ordenacion.guardar.OrderGuardar;
 import gt.umg.ordenacion.lectura.Lectura;
 
 
@@ -34,6 +35,7 @@ public class Ejecutar {
         EscribirArchivo escribir = new EscribirArchivo();
         LeerArchivo lectura = new LeerArchivo();
         Lectura lecturaorder = new Lectura();
+        OrderGuardar od = new OrderGuardar();
 
         
          /*
@@ -48,7 +50,7 @@ public class Ejecutar {
         boolean condicion = true;
         do {
             /*
-             *Inicializacion del menu
+             *Inicializacion del menu5
              */
             System.out.println("\n");
             System.out.println("***************************************************");
@@ -56,7 +58,8 @@ public class Ejecutar {
             System.out.println("************ 2-------- LEER ARHIVO       **********");
             System.out.println("************ 3-------- ESCRIBIR ARCHIVO  **********");
             System.out.println("************ 4-------- ORDENAR POR CARNE **********");
-            System.out.println("************ 5-------- SALIR             **********");
+            System.out.println("************ 5-------- COPIAR CARNE      **********");
+            System.out.println("************ 6-------- SALIR             **********");
             System.out.println("***************************************************");
             System.out.println("\n");
             
@@ -77,8 +80,10 @@ public class Ejecutar {
                 break;
                 case 4:lecturaorder.LecturaArchivo();
                 break;
-                case 5: 
-                    if(opt==5){
+                case 5: od.LeerArchivo();
+                break;
+                case 6: 
+                    if(opt==6){
                     System.out.print("ESTA SEGURO DE SALIR? S/N: ");
                     String exit = salida.nextLine();
                     if("S".equals(exit) | "s".equals(exit)){

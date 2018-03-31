@@ -19,8 +19,7 @@ public class Lectura {
         List<Estudiantes> estudiantes = new ArrayList<Estudiantes>();
         Estudiantes estudiante = null;
         try {
-            BufferedReader br = new BufferedReader(
-                    new FileReader(filename));
+            BufferedReader br = new BufferedReader(new FileReader(filename));
             // leer todas la lineas del archivo
             while ((linea = br.readLine()) != null) {
                 // cada linea tiene los datos para crear un producto
