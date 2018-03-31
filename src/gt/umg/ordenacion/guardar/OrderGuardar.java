@@ -36,7 +36,7 @@ public class OrderGuardar {
             while ((linea = br.readLine()) != null) {
                 // cada linea tiene los datos para crear un producto
                 datos = linea.split(" ");
-                estudiante = new Estudiantes("\t"+ datos[0],datos[1],datos[2]);
+                estudiante = new Estudiantes(datos[0],datos[1],datos[2]);
                 // agregamos el producto a la lista de productos
                 estudiantes.add(estudiante);
             }
@@ -58,7 +58,7 @@ public class OrderGuardar {
                 escribir.write(a +"\r\n");
             }
             escribir.close();
-            System.out.println("ARCHIVO DATOS REGISTRADOS EXITOSAMENTE");
+            System.out.println("ARCHIVO: DATOS REGISTRADOS EXITOSAMENTE");
         } catch (IOException e) {
             System.out.println(e);
         }

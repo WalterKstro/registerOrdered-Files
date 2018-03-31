@@ -78,8 +78,8 @@ public class Ejecutar {
                 break;
                 case 4:ordenar.LeerArchivo();
                 break;
-                case 6: 
-                    if(opt==6){
+                case 5: 
+                    if(opt==5){
                     System.out.print("ESTA SEGURO DE SALIR? S/N: ");
                     String exit = salida.nextLine();
                     if("S".equals(exit) | "s".equals(exit)){
