@@ -2,7 +2,7 @@
 
 package gt.umg.ordenacion.guardar;
 
-import gt.umg.ordenacion.lectura.Lectura;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -10,8 +10,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+
 import umg.gt.ordenacion.estudiantes.Estudiantes;
 
 
@@ -43,12 +42,12 @@ public class OrderGuardar {
             }
             br.close();
             // imprimir archivo en orden original
-//            System.out.println("Elementos originales:");
-//            System.out.println(estudiantes);
+            System.out.println("Elementos originales:");
+            System.out.println(estudiantes);
             Collections.sort(estudiantes);
             // imprimir archivo ordenado
-//            System.out.println("Elementos ordenados:");
-//            System.out.println(estudiantes);
+            System.out.println("Elementos ordenados:");
+            System.out.println(estudiantes);
             FileWriter escribir = new FileWriter(f_salida, true);
             for(Estudiantes e:estudiantes){
                 String c = e.getCarne();
@@ -56,7 +55,7 @@ public class OrderGuardar {
                 String a = e.getApellido();
                 escribir.write(c);
                 escribir.write(n);
-                escribir.write(a);
+                escribir.write(a +"\r\n");
             }
             escribir.close();
             System.out.println("ARCHIVO DATOS REGISTRADOS EXITOSAMENTE");
