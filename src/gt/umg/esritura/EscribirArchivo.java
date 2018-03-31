@@ -1,4 +1,4 @@
-package escritura;
+package gt.umg.esritura;
 
 /*
 *Importacion de librerias

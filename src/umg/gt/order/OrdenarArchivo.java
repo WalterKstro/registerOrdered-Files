@@ -9,8 +9,8 @@ import java.util.List;
 
 public class OrdenarArchivo {
 
-  public void Ordenar(){
-      String filename = "entrada.txt";
+    public void Ordenar() {
+        String filename = "entrada.txt";
         String linea = null;
         String[] datos = null;
         List<Producto> productos = new ArrayList<Producto>();
@@ -21,8 +21,8 @@ public class OrdenarArchivo {
             // leer todas la lineas del archivo
             while ((linea = br.readLine()) != null) {
                 // cada linea tiene los datos para crear un producto
-                datos = linea.split(" ");
-                producto = new Producto(datos[0],datos[1],datos[2],datos[3]);
+                datos = linea.split("");
+                producto = new Producto(datos[0], datos[1], datos[2], datos[3]);
                 // agregamos el producto a la lista de productos
                 productos.add(producto);
             }
@@ -34,6 +34,7 @@ public class OrdenarArchivo {
             // imprimir archivo ordenado
             System.out.println("Elementos ordenados:");
             System.out.println(productos);
+
         } catch (IOException e) {
             System.out.println(e);
         }
@@ -88,24 +89,17 @@ class Producto implements Comparable<Producto> {
         this.carrera = carrera;
     }
 
-    
-
+    @Override
     public String toString() {
         return carne + " " + nombre + " "
-                + apellido + " " + carrera;
+                + apellido + " " + carrera + "\n";
+
     }
 
     // Este metodo es el que nos permite comparar
     // entre productos y de esta forma puedan ser ordenados.
+    @Override
     public int compareTo(Producto p) {
-        int resultado;
-        resultado = p.getNombre().compareTo(nombre);
-        if(resultado == 0){
-            resultado = p.getApellido().compareTo(apellido);
-            if(resultado == 0){
-                resultado = p.getCarne().compareTo(carne);
-            }
-        }
-        return resultado;
-  }
+        return this.getNombre().compareTo(p.getNombre());
+    }
 }

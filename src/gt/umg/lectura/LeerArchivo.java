@@ -1,4 +1,4 @@
-package lectura;
+package gt.umg.lectura;
 /*
 *Importacion de librerias
 */

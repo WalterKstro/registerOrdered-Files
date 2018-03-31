@@ -4,7 +4,7 @@
 *@autor Walter Castro
 *@version 1.0
 */
-package Ejecutar;
+package gt.umg.ejecutar;
 
 /*
 *Importacion de librerias
@@ -12,9 +12,10 @@ package Ejecutar;
 
 
 
-import escritura.EscribirArchivo;
+import gt.umg.esritura.EscribirArchivo;
+
 import java.util.Scanner;
-import lectura.LeerArchivo;
+import gt.umg.lectura.LeerArchivo;
 import umg.gt.order.OrdenarArchivo;
 
 public class Ejecutar {
@@ -53,7 +54,7 @@ public class Ejecutar {
             System.out.println("************ 1-------- INGRESAR DATOS    **********");
             System.out.println("************ 2-------- LEER ARHIVO       **********");
             System.out.println("************ 3-------- ESCRIBIR ARCHIVO  **********");
-            System.out.println("************ 4-------- ORDENAR POR CARNÉ **********");
+            System.out.println("************ 4-------- ORDENAR POR NOMBRE**********");
             System.out.println("************ 5-------- SALIR             **********");
             System.out.println("***************************************************");
             System.out.println("\n");
@@ -73,7 +74,7 @@ public class Ejecutar {
                 break;
                 case 3:escribir.EsribirDatos();
                 break;
-                case 4: order.Ordenar();
+                case 4:order.Ordenar();
                 break;
                 case 5: 
                     if(opt==5){
