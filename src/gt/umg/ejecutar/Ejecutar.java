@@ -34,8 +34,7 @@ public class Ejecutar {
         */
         EscribirArchivo escribir = new EscribirArchivo();
         LeerArchivo lectura = new LeerArchivo();
-        Lectura lecturaorder = new Lectura();
-        OrderGuardar od = new OrderGuardar();
+        OrderGuardar ordenar = new OrderGuardar();
 
         
          /*
@@ -73,13 +72,11 @@ public class Ejecutar {
             switch (opt) {
                 case 1:escribir.Datos();
                 break;
-                case 2: lectura.Lectura();
+                case 2:escribir.EsribirDatos();
                 break;
-                case 3:escribir.EsribirDatos();
+                case 3:lectura.Lectura();
                 break;
-                case 4:lecturaorder.LecturaArchivo();
-                break;
-                case 5: od.LeerArchivo();
+                case 4:ordenar.LeerArchivo();
                 break;
                 case 6: 
                     if(opt==6){
