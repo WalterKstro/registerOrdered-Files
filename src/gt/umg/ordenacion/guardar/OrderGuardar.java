@@ -3,6 +3,7 @@
 package gt.umg.ordenacion.guardar;
 
 
+import gt.umg.borrar.Borrar;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -25,6 +26,7 @@ public class OrderGuardar {
     public void LeerArchivo(){
         
         String f_entrada = "entrada.txt";
+        Borrar delete = new Borrar();
         File f_salida = new File("salida.txt");
         String linea = null;
         String[] datos = null;
@@ -48,14 +50,15 @@ public class OrderGuardar {
             // imprimir archivo ordenado
             System.out.println("REGISTROS ORDENADOS:");
             System.out.println(estudiantes);
+            delete.BorrarFile();
             FileWriter escribir = new FileWriter(f_salida, true);
             for(Estudiantes e:estudiantes){
-                String c = e.getCarne();
-                String n = e.getNombre();
-                String a = e.getApellido();
-                escribir.write(c);
-                escribir.write(n);
-                escribir.write(a +"\r\n");
+
+                escribir.write(e.getCarne());
+                escribir.write(e.getNombre());
+                escribir.write(e.getApellido()+"\r\n");   
+ 
+                
             }
             escribir.close();
             System.out.println("ARCHIVO: DATOS REGISTRADOS EXITOSAMENTE");
