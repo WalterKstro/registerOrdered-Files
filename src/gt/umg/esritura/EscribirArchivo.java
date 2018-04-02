@@ -53,7 +53,7 @@ public class EscribirArchivo {
                 @param archivo = directorio del archivo, true = como apila la informacion en el archivo
                  */
                 FileWriter escribir = new FileWriter(archivo, true);
-                escribir.write(carnet + "|");
+                escribir.write(carnet + "| ");
                 escribir.write(nombre + "|");
                 escribir.write(apellido + "|");
                 escribir.write(carrera + "; \r\n");
