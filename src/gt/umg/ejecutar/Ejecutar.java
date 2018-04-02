@@ -17,6 +17,7 @@ import gt.umg.esritura.EscribirArchivo;
 import java.util.Scanner;
 import gt.umg.lectura.LeerArchivo;
 import gt.umg.ordenacion.guardar.OrderCarne;
+import gt.umg.ordenacion.guardar.OrderNombre;
 
 
 
@@ -34,7 +35,8 @@ public class Ejecutar {
         */
         EscribirArchivo escribir = new EscribirArchivo();
         LeerArchivo lectura = new LeerArchivo();
-        OrderCarne ordenar = new OrderCarne();
+        OrderCarne ordenarCarne = new OrderCarne();
+        OrderNombre ordenarNombre = new OrderNombre();
 
         
          /*
@@ -57,7 +59,8 @@ public class Ejecutar {
             System.out.println("************ 2-------- ALMACENAR ESTUDIANTES    **********");
             System.out.println("************ 3-------- VER REGISTRO ESTUDIANTES **********");
             System.out.println("************ 4-------- ORDENAR POR CARNE        **********");
-            System.out.println("************ 5-------- SALIR                    **********");
+            System.out.println("************ 5-------- ORDENAR POR NOMBRE       **********");
+            System.out.println("************ 6-------- SALIR                    **********");
             System.out.println("**********************************************************");
             System.out.println("\n");
             
@@ -76,10 +79,12 @@ public class Ejecutar {
                 break;
                 case 3:lectura.Lectura();
                 break;
-                case 4:ordenar.LeerArchivo();
+                case 4:ordenarCarne.LeerArchivo();
                 break;
-                case 5: 
-                    if(opt==5){
+                case 5: ordenarNombre.LeerArchivo();
+                break;
+                case 6: 
+                    if(opt==6){
                     System.out.print("ESTA SEGURO DE SALIR? S/N: ");
                     String exit = salida.nextLine();
                     if("S".equals(exit) | "s".equals(exit)){
