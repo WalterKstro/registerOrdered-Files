@@ -5,13 +5,26 @@ public class Estudiantes implements Comparable<Estudiantes> {
     private String carne;
     private String nombre;
     private String apellido;
-
-    public Estudiantes(String carne, String nombre, String apellido) {
+    private String carrera;
+    public Estudiantes(String carne, String nombre, String apellido,String carrera) {
         this.carne = carne;
         this.nombre = nombre;
         this.apellido = apellido;
+        this.carrera=carrera;
     }
 
+    public Estudiantes() {
+    }
+
+    public String getCarrera() {
+        return carrera;
+    }
+
+    public void setCarrera(String carrera) {
+        this.carrera = carrera;
+    }
+    
+    
     public String getCarne() {
         return carne;
     }
@@ -38,11 +51,12 @@ public class Estudiantes implements Comparable<Estudiantes> {
 
     @Override
     public String toString() {
-        return carne + " " + nombre + " " + apellido+"\n";
+        return carne + " " + nombre + " " + apellido+" "+carrera+"\n";
     }
 
     @Override
     public int compareTo(Estudiantes e) {
         return this.getCarne().compareTo(e.getCarne());
     }
+    
 }

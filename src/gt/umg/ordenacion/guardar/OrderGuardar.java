@@ -38,7 +38,7 @@ public class OrderGuardar {
             while ((linea = br.readLine()) != null) {
                 // cada linea tiene los datos para crear un producto
                 datos = linea.split(" ");
-                estudiante = new Estudiantes(datos[0],datos[1],datos[2]);
+                estudiante = new Estudiantes(datos[0],datos[1],datos[2],datos[3]);
                 // agregamos el producto a la lista de productos
                 estudiantes.add(estudiante);
             }
@@ -54,9 +54,10 @@ public class OrderGuardar {
             FileWriter escribir = new FileWriter(f_salida, true);
             for(Estudiantes e:estudiantes){
 
-                escribir.write(e.getCarne());
-                escribir.write(e.getNombre());
-                escribir.write(e.getApellido()+"\r\n");   
+                escribir.write(e.getCarne().trim());
+                escribir.write(e.getNombre().trim());
+                escribir.write(e.getApellido().trim()); 
+                escribir.write(e.getCarrera().trim()+"\r\n");
  
                 
             }
