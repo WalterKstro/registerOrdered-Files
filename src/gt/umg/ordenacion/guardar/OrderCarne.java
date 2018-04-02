@@ -12,11 +12,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import umg.gt.ordenacion.estudiantes.Estudiantes;
+import umg.gt.ordenacion.estudiantes.EstudiantesCarne;
 
 
 
-public class OrderGuardar {
+public class OrderCarne {
   /*
     *Funcion EscribirDatos()
     *@param none
@@ -30,15 +30,15 @@ public class OrderGuardar {
         File f_salida = new File("salida.txt");
         String linea = null;
         String[] datos = null;
-        ArrayList<Estudiantes> estudiantes = new ArrayList<>();
-        Estudiantes estudiante = null;
+        ArrayList<EstudiantesCarne> estudiantes = new ArrayList<>();
+        EstudiantesCarne estudiante = null;
         try {
             BufferedReader br = new BufferedReader(new FileReader(f_entrada));
             // leer todas la lineas del archivo
             while ((linea = br.readLine()) != null) {
                 // cada linea tiene los datos para crear un producto
                 datos = linea.split(" ");
-                estudiante = new Estudiantes(datos[0],datos[1],datos[2],datos[3]);
+                estudiante = new EstudiantesCarne(datos[0],datos[1],datos[2],datos[3]);
                 // agregamos el producto a la lista de productos
                 estudiantes.add(estudiante);
             }
@@ -52,7 +52,7 @@ public class OrderGuardar {
             System.out.println(estudiantes);
             delete.BorrarFile();
             FileWriter escribir = new FileWriter(f_salida, true);
-            for(Estudiantes e:estudiantes){
+            for(EstudiantesCarne e:estudiantes){
 
                 escribir.write(e.getCarne().trim());
                 escribir.write(e.getNombre().trim());

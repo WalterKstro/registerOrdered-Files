@@ -16,7 +16,7 @@ import gt.umg.esritura.EscribirArchivo;
 
 import java.util.Scanner;
 import gt.umg.lectura.LeerArchivo;
-import gt.umg.ordenacion.guardar.OrderGuardar;
+import gt.umg.ordenacion.guardar.OrderCarne;
 
 
 
@@ -34,7 +34,7 @@ public class Ejecutar {
         */
         EscribirArchivo escribir = new EscribirArchivo();
         LeerArchivo lectura = new LeerArchivo();
-        OrderGuardar ordenar = new OrderGuardar();
+        OrderCarne ordenar = new OrderCarne();
 
         
          /*

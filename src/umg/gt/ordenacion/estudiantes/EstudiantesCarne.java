@@ -1,19 +1,19 @@
 package umg.gt.ordenacion.estudiantes;
 
-public class Estudiantes implements Comparable<Estudiantes> {
+public class EstudiantesCarne implements Comparable<EstudiantesCarne> {
 
     private String carne;
     private String nombre;
     private String apellido;
     private String carrera;
-    public Estudiantes(String carne, String nombre, String apellido,String carrera) {
+    public EstudiantesCarne(String carne, String nombre, String apellido,String carrera) {
         this.carne = carne;
         this.nombre = nombre;
         this.apellido = apellido;
         this.carrera=carrera;
     }
 
-    public Estudiantes() {
+    public EstudiantesCarne() {
     }
 
     public String getCarrera() {
@@ -55,7 +55,7 @@ public class Estudiantes implements Comparable<Estudiantes> {
     }
 
     @Override
-    public int compareTo(Estudiantes e) {
+    public int compareTo(EstudiantesCarne e) {
         return this.getCarne().compareTo(e.getCarne());
     }
     
