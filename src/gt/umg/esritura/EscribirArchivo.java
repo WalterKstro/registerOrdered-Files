@@ -11,7 +11,7 @@ import java.util.Scanner;
 /**
  * Clase EscribirArchivo contendra los parametros
  * y metodos para poder escribir en un archivo entrada.txt
- * 
+ * @author walte
  */
 public class EscribirArchivo {
 
@@ -68,7 +68,8 @@ public class EscribirArchivo {
                  */
                 FileWriter escribir = new FileWriter(archivo, true);
                 /**
-                 * Proceso de escritura en el archivo
+                 * Proceso de escritura en el archivo utilizando
+                 * el metodo write del objeto escribir
                  */
                 escribir.write(carnet + "| ");
                 escribir.write(nombre + "|");
