@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+import umg.gt.ordenacion.estudiantes.EstudiantesCarrera;
 
 /**
  * Clase EscribirArchivo contendra los parametros
@@ -24,6 +25,7 @@ public class EscribirArchivo {
     private String carrera;
     private String carnet;
     Scanner txt = new Scanner(System.in);
+    EstudiantesCarrera estudiante = new EstudiantesCarrera();
 
     /**
      *Funcion IngresarDatos() Permite el ingreso de nuevos datos 
@@ -38,12 +40,16 @@ public class EscribirArchivo {
          */
         System.out.print("  INGRESE SU CARNÉ: ");
         carnet = txt.nextLine();
+        estudiante.setCarne(carnet);
         System.out.print("  INGRESE SU NOMBRE: ");
         nombre = txt.nextLine();
+        estudiante.setNombre(nombre);
         System.out.print("INGRESE SU APELLIDO: ");
         apellido = txt.nextLine();
+        estudiante.setNombre(apellido);
         System.out.print(" INGRESE SU CARRERA: ");
         carrera = txt.nextLine();
+        estudiante.setCarrera(carrera);
     }
 
     /*

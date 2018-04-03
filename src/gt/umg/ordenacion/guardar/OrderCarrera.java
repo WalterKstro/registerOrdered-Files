@@ -57,9 +57,9 @@ public class OrderCarrera {
                 escribir.write(e.getNombre().trim());
                 escribir.write(e.getApellido().trim()); 
                 escribir.write(e.getCarrera().trim()+"\r\n");
- 
-                
             }
+
+
             escribir.close();
             System.out.println("ARCHIVO: DATOS REGISTRADOS EXITOSAMENTE");
         } catch (IOException e) {

@@ -1,7 +1,7 @@
 /**
  *Programa que permite la escritura y lectura de archivos y 
  *ordenarlos a ciertos criterios
- *@autor Walter Castro
+ *@autor walte
  *@version 1.0
  *@
  */

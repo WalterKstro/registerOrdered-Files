@@ -10,7 +10,7 @@ public class EstudiantesCarrera implements Comparable<EstudiantesCarrera> {
         this.carne = carne;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.carrera=carrera;
+        this.carrera = carrera;
     }
 
     public EstudiantesCarrera() {
@@ -51,7 +51,7 @@ public class EstudiantesCarrera implements Comparable<EstudiantesCarrera> {
 
     @Override
     public String toString() {
-        return carne + " " + nombre + " " + apellido+" "+carrera+"\n";
+        return carne + " " + nombre + " " + apellido + " " + carrera +"\n";
     }
 
     @Override
