@@ -23,7 +23,7 @@ import umg.gt.ordenacion.estudiantes.EstudiantesCarne;
  */
 public class OrderCarne {
   /**
-    *Funcion EscribirDatos() Permite la lectura del archivo
+    *Funcion LeerArchivo() Permite la lectura del archivo
     * de entrada, ordenarlo de acuerdo a ciertos criterios
     * y copiarlos a otro archivo de salida
     *@param none
@@ -52,8 +52,7 @@ public class OrderCarne {
              * @param objeto recibe como una nueva instanciacion de la clase
              * FileReader
              * @method FileReader() constructor de la clase FileReader
-             * @param f_salida contiene la ruta del archivo de salida donde se copiaran 
-             * los estudiantes ordenados
+             * @param f_entrada contiene la ruta del archivo de entrada para su lectura
              */
             BufferedReader br = new BufferedReader(new FileReader(f_entrada));
             /**
