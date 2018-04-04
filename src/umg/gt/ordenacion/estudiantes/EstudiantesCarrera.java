@@ -51,7 +51,7 @@ public class EstudiantesCarrera implements Comparable<EstudiantesCarrera> {
 
     @Override
     public String toString() {
-        return carne + " " + nombre + " " + apellido + " " + carrera +"\n";
+        return carne + "|" + nombre + "|" + apellido + "|" + carrera +"\n";
     }
 
     @Override

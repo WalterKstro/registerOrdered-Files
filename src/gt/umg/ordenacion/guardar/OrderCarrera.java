@@ -36,7 +36,7 @@ public class OrderCarrera {
             // leer todas la lineas del archivo
             while ((linea = br.readLine()) != null) {
                 // cada linea tiene los datos para crear un producto
-                datos = linea.split(" ");
+                datos = linea.split("\\|");
                 estudiante = new EstudiantesCarrera(datos[0],datos[1],datos[2],datos[3]);
                 // agregamos el producto a la lista de productos
                 estudiantes.add(estudiante);
@@ -53,10 +53,10 @@ public class OrderCarrera {
             FileWriter escribir = new FileWriter(f_salida, true);
             for(EstudiantesCarrera e:estudiantes){
 
-                escribir.write(e.getCarne().trim());
-                escribir.write(e.getNombre().trim());
-                escribir.write(e.getApellido().trim()); 
-                escribir.write(e.getCarrera().trim()+"\r\n");
+                escribir.write(e.getCarne()+"|");
+                escribir.write(e.getNombre()+"|");
+                escribir.write(e.getApellido()+"|"); 
+                escribir.write(e.getCarrera()+"\r\n");
             }
 
 
