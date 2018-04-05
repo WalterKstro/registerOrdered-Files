@@ -74,6 +74,8 @@ public class Ejecutar {
             
             /**
              * Instruccion que permite solicitar una opcion del menu
+             * Try para controlas las excepciones a la hora de ingresar letras
+             * en vez de numeros
              */
             try{
             System.out.print("SELECCIONE UNA OPCION: ");
