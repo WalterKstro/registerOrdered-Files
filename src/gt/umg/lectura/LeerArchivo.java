@@ -21,7 +21,7 @@ public class LeerArchivo {
     BufferedReader br = null;
 
     /**
-    *@method Letura() permite leer el archivo linea a linea
+    *Metodo Letura() permite leer el archivo linea a linea
     */
     public void Lectura() {
         /**

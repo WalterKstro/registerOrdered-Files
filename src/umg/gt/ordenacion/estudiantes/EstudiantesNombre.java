@@ -43,7 +43,7 @@ public class EstudiantesNombre implements Comparable<EstudiantesNombre> {
     }
 /**
  * Metodo para asignar la carrera
- * @param carrera 
+ * @param carrera se le asigna al parametro carrera de la clase
  */
     public void setCarrera(String carrera) {
         this.carrera = carrera;
@@ -58,7 +58,7 @@ public class EstudiantesNombre implements Comparable<EstudiantesNombre> {
     }
 /**
  * Metodo para asignar el carne
- * @param carne 
+ * @param carne se le asigna al parametro carne de la clase
  */
     public void setCarne(String carne) {
         this.carne = carne;
@@ -72,7 +72,7 @@ public class EstudiantesNombre implements Comparable<EstudiantesNombre> {
     }
 /**
  * Metodo para asignar el nombre
- * @param nombre 
+ * @param nombre se le asigna al parametro nombre de la clase
  */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -86,7 +86,7 @@ public class EstudiantesNombre implements Comparable<EstudiantesNombre> {
     }
 /**
  * Metodo para asignar el apellido
- * @param apellido 
+ * @param apellido se le asigna al parametro apellido de la clase
  */
     public void setApellido(String apellido) {
         this.apellido = apellido;
