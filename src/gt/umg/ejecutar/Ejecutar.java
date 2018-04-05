@@ -16,6 +16,7 @@ import gt.umg.lectura.LeerArchivo;
 import gt.umg.ordenacion.guardar.OrderCarne;
 import gt.umg.ordenacion.guardar.OrderCarrera;
 import gt.umg.ordenacion.guardar.OrderNombre;
+import java.util.InputMismatchException;
 
 
 /**
@@ -49,7 +50,7 @@ public class Ejecutar {
         /**
          *Inicializacion de varaibles
          */
-        int opt;
+        int opt = 0;
         boolean condicion = true;
         /**
          * Ciclo do while permite mostrar el menu y salir del programa 
@@ -74,9 +75,10 @@ public class Ejecutar {
             /**
              * Instruccion que permite solicitar una opcion del menu
              */
+            try{
             System.out.print("SELECCIONE UNA OPCION: ");
             opt = ingreso.nextInt();
-
+            
             System.out.println("\n");
             /**
              *Case de opciones de seleccion
@@ -104,7 +106,7 @@ public class Ejecutar {
                     String exit = salida.nextLine();
                     if("S".equals(exit) | "s".equals(exit)){ //Comparacion entre dos caracteres
                         condicion = false;
-                        System.out.println("HAS SALIDO DEL PROGRAMA...");
+                        System.out.println("HAS SALIDO DEL PROGRAMA...:)");
                     }else{
                         condicion = true;
                     }
@@ -112,6 +114,9 @@ public class Ejecutar {
                         
                 break;
                 default: System.out.println("OPCION NO ES VALIDA");
+            }}catch(InputMismatchException ime){
+                System.out.println("ERROR:DEBE INGRESAR SOLAMENTE NUMEROS"+"\n");
+                condicion= false;
             }
 
         } while (condicion);

@@ -55,6 +55,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Archivos de almaenamiento
+entrada.txt
+salida.txt
 
 # End of https://www.gitignore.io/api/java,windows,netbeans
 
