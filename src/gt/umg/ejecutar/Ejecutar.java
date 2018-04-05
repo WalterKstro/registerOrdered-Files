@@ -63,12 +63,11 @@ public class Ejecutar {
             System.out.println("\n");
             System.out.println("**********************************************************");
             System.out.println("************ 1-------- REGISTRAR ESTUDIANTES    **********");
-            System.out.println("************ 2-------- ALMACENAR ESTUDIANTES    **********");
-            System.out.println("************ 3-------- VER REGISTRO ESTUDIANTES **********");
-            System.out.println("************ 4-------- ORDENAR POR CARNE        **********");
-            System.out.println("************ 5-------- ORDENAR POR NOMBRE       **********");
-            System.out.println("************ 6-------- ORDENAR POR CARRERA      **********");
-            System.out.println("************ 7-------- SALIR                    **********");
+            System.out.println("************ 2-------- VER REGISTRO ESTUDIANTES **********");
+            System.out.println("************ 3-------- ORDENAR POR CARNE        **********");
+            System.out.println("************ 4-------- ORDENAR POR NOMBRE       **********");
+            System.out.println("************ 5-------- ORDENAR POR CARRERA      **********");
+            System.out.println("************ 6-------- SALIR                    **********");
             System.out.println("**********************************************************");
             
             /**
@@ -85,24 +84,22 @@ public class Ejecutar {
              *Case de opciones de seleccion
              */
             switch (opt) {
-                case 1:escribir.Datos();
+                case 1:escribir.EsribirDatos();
                 break;
-                case 2:escribir.EsribirDatos();
+                case 2:lectura.Lectura();
                 break;
-                case 3:lectura.Lectura();
+                case 3:ordenarCarne.LeerArchivo();
                 break;
-                case 4:ordenarCarne.LeerArchivo();
+                case 4:ordenarNombre.LeerArchivo();
                 break;
-                case 5:ordenarNombre.LeerArchivo();
+                case 5:ordenarCarrera.LeerArchivo();
                 break;
-                case 6:ordenarCarrera.LeerArchivo();
-                break;
-                case 7: 
+                case 6: 
                     /**
                      * Condicional para poder salir o no
                      * del programa
                      */
-                    if(opt==7){
+                    if(opt==6){
                     System.out.print("ESTA SEGURO DE SALIR? S/N: ");
                     String exit = salida.nextLine();
                     if("S".equals(exit) | "s".equals(exit)){ //Comparacion entre dos caracteres

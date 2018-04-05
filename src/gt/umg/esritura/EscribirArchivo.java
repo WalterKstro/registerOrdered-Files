@@ -54,6 +54,7 @@ public class EscribirArchivo {
      *Funcion EscribirDatos() Permite el registro de los datos al archivo
      */
     public void EsribirDatos() {
+        Datos();
         /**
          * Manejo de excepciones para la escritura 
          * de nuevos registros al archivo entrada.txt
