@@ -114,6 +114,10 @@ public class Ejecutar {
                         
                 break;
                 default: System.out.println("OPCION NO ES VALIDA");
+                /**
+                 * @exception InputMismatchException excepcion en caso que se ingresen
+                 * letras cuado se soliciten numeros
+                 */
             }}catch(InputMismatchException ime){
                 System.out.println("ERROR:DEBE INGRESAR SOLAMENTE NUMEROS"+"\n");
                 condicion= false;
