@@ -70,7 +70,6 @@ public class Ejecutar {
             System.out.println("************ 6-------- ORDENAR POR CARRERA      **********");
             System.out.println("************ 7-------- SALIR                    **********");
             System.out.println("**********************************************************");
-            System.out.println("\n");
             
             /**
              * Instruccion que permite solicitar una opcion del menu

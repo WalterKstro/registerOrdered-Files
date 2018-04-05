@@ -98,7 +98,7 @@ public class EstudiantesNombre implements Comparable<EstudiantesNombre> {
  */
     @Override
     public String toString() {
-        return carne + " " + nombre + " " + apellido+" "+carrera+"\n";
+        return carne + "|" + nombre + "|" + apellido+"|"+carrera+"\n";
     }
 /**
  * Sobreescritura del metodo abstracto compareTo el cual compara el parametro

@@ -36,7 +36,7 @@ public class EscribirArchivo {
          * Solicitar la informacion de cada estudiante
          * y almacenarlo en variables temporales
          */
-        System.out.print("  INGRESE SU CARNÉ: ");
+        System.out.print("   INGRESE SU CARNÉ: ");
         carnet = txt.nextLine();
         estudiante.setCarne(carnet);
         System.out.print("  INGRESE SU NOMBRE: ");
@@ -73,9 +73,9 @@ public class EscribirArchivo {
                  * Proceso de escritura en el archivo utilizando
                  * el metodo write del objeto escribir
                  */
-                escribir.write(carnet + "| ");
-                escribir.write(nombre + "|");
-                escribir.write(apellido + "|");
+                escribir.write(carnet + " | ");
+                escribir.write(nombre + " | ");
+                escribir.write(apellido + " | ");
                 escribir.write(carrera + "; \r\n");
                 /**
                  *Se cierra el archivo

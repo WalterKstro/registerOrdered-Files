@@ -61,7 +61,7 @@ public class OrderNombre {
                 /**
                  * Cada linea se separa por un espacio en blanco
                  */
-                datos = linea.split(" ");
+                datos = linea.split("\\|");
                 /**
                  * Creacion del objeto estudiante
                  * @method EstudiantesNombre constructor de la clase EstudiantesNombre
@@ -73,9 +73,6 @@ public class OrderNombre {
                 estudiantes.add(estudiante);
             }
             br.close();//Se cierra el archivo de lectura
-            // imprimir archivo en orden original
-            System.out.println("REGISTROS ORIGINALES:");
-            System.out.println(estudiantes);
              /**
              * Utilizando el metodo sort de la  API Collections de Java
              * @method sort() metodo que ordena a los estudiantes
@@ -83,9 +80,7 @@ public class OrderNombre {
              */
             Collections.sort(estudiantes);
             // imprimir archivo ordenado
-            System.out.println("REGISTROS ORDENADOS:");
-            System.out.println(estudiantes);
-            /**
+            System.out.println("REGISTROS ORDENADOS POR NOMBRE:");            /**
              * Objeto delete
              * @method BorrarFile() permite borrar el archivo de salida
              */
@@ -104,11 +99,11 @@ public class OrderNombre {
              */
             for(EstudiantesNombre e:estudiantes){
 
-                escribir.write(e.getCarne().trim());
-                escribir.write(e.getNombre().trim());
-                escribir.write(e.getApellido().trim()); 
-                escribir.write(e.getCarrera().trim()+"\r\n");
- 
+                escribir.write(e.getCarne()+"|");
+                escribir.write(e.getNombre()+"|");
+                escribir.write(e.getApellido()+"|"); 
+                escribir.write(e.getCarrera()+"\r\n");
+                System.out.print(e);
                 
             }
             escribir.close();//Cerrado del archivo de f_salida
