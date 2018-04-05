@@ -33,49 +33,67 @@ public class EstudiantesCarne implements Comparable<EstudiantesCarne> {
     public EstudiantesCarne() {
     }
 
-    /**
-     * Metodos Getter y Setter de las variables de la clase
-     * @return void para Setter
-     * @return String para Getter
-     * @param String para los metodos Setter
-     */
+/**
+ * Metodo para obtener la carrera
+ * @return carrera
+ */
     public String getCarrera() {
         return carrera;
     }
-
+/**
+ * Metodo para asignar la carrera
+ * @param carrera 
+ */
     public void setCarrera(String carrera) {
         this.carrera = carrera;
     }
     
-    
+    /**
+     * Metodo para obtener el carne
+     * @return carne
+     */
     public String getCarne() {
         return carne;
     }
-
+/**
+ * Metodo para asignar el carne
+ * @param carne 
+ */
     public void setCarne(String carne) {
         this.carne = carne;
     }
-
+/**
+ * Metodo para obtener el nombre
+ * @return nombre
+ */
     public String getNombre() {
         return nombre;
     }
-
+/**
+ * Metodo para asignar el nombre
+ * @param nombre 
+ */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
+/**
+ * Metodo para obtener el apellido
+ * @return apellido
+ */
     public String getApellido() {
         return apellido;
     }
-
+/**
+ * Metodo para asignar el apellido
+ * @param apellido 
+ */
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
 /**
  * Sobreescritura del metodo abstracto toString el cual imprime en 
  * pantalla los registros de los estudiantes
- * @return String 
- * @param none
+ * @return String
  */
     @Override
     public String toString() {

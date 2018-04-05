@@ -11,10 +11,13 @@ import java.io.File;
 public class Borrar {
 /**
  * Metodo BorrarFile permitira borrar el archivo salida.txt
- * @param none
- * @return void no retorna nada
  */
     public void BorrarFile(){
+        /**
+         * Instancia un nuevo objeto de tipo File
+         * @method File() es el constructor de la clase File
+         * @param salida que es el archivo que se va a eliminar
+         */
         File fichero = new File("salida.txt");
         fichero.delete();
     }

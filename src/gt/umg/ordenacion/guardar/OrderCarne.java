@@ -26,10 +26,8 @@ public class OrderCarne {
     *Funcion LeerArchivo() Permite la lectura del archivo
     * de entrada, ordenarlo de acuerdo a ciertos criterios
     * y copiarlos a otro archivo de salida
-    *@param none
-    *@return void
     *
-     */
+    */
     public void LeerArchivo(){
         /**
          * Declaracio de varaibles, asi como la instanciacion
@@ -67,11 +65,15 @@ public class OrderCarne {
                 /**
                  * Creacion del objeto estudiante
                  * @method EstudiantesCarne constructor de la clase EstudiantesCarne
-                 * @param datos 
+                 * @param datos son los parametros que forman a un objeto
                  * 
                  */
                 estudiante = new EstudiantesCarne(datos[0],datos[1],datos[2],datos[3]);
-                // Se agrega cada estudiante a la lista
+                /**
+                 * Se utiliza el metodo add para poder agregar al nuevo 
+                 * estudiante a la lista
+                 * @param estudiante cada estudiante que se instancia
+                 */
                 estudiantes.add(estudiante);
             }
             br.close();//Se cierra el archivo de lectura
@@ -90,7 +92,6 @@ public class OrderCarne {
             /**
              * Objeto delete
              * @method BorrarFile() permite borrar el archivo de salida
-             * @param none
              */
             delete.BorrarFile();
             /**

@@ -13,17 +13,15 @@ import java.io.IOException;
  * @author walte
  */
 public class LeerArchivo {
-    /*
-    *Inizialicacion de las variables con null
-    */
+    /**
+     *Inizialicacion de las variables con null
+     */
     File archivo = null;
     FileReader fr = null;
     BufferedReader br = null;
 
     /**
-    *@method Letura() permite leer el archivo
-    *@param none
-    *@return void
+    *@method Letura() permite leer el archivo linea a linea
     */
     public void Lectura() {
         /**
@@ -33,9 +31,9 @@ public class LeerArchivo {
         try {
             /**
              * Instanciacion del objeto archivo de la clase File
-            *@method File() constructor de la clase File
-            *@param archivo  ruta del archivo
-            */
+             *@method File() constructor de la clase File
+             *@param archivo  ruta del archivo
+             */
             archivo = new File("entrada.txt");
             try {
                 /**

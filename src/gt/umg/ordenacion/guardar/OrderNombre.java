@@ -26,8 +26,6 @@ public class OrderNombre {
     *Funcion LeerArchivo() Permite la lectura del archivo
     * de entrada, ordenarlo de acuerdo a ciertos criterios
     * y copiarlos a otro archivo de salida
-    *@param none
-    *@return void
     *
     */
     public void LeerArchivo(){
@@ -90,7 +88,6 @@ public class OrderNombre {
             /**
              * Objeto delete
              * @method BorrarFile() permite borrar el archivo de salida
-             * @param none
              */
             delete.BorrarFile();
             /**

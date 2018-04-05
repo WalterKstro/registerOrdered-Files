@@ -27,7 +27,6 @@ public class Ejecutar {
     /**
      *Funcion principal del programa
      *@param args Array de argumentos
-     *@return void
      */
     public static void main(String[] args) {
         

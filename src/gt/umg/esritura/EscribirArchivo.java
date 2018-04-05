@@ -30,8 +30,6 @@ public class EscribirArchivo {
     /**
      *Funcion IngresarDatos() Permite el ingreso de nuevos datos 
      * y almacenarlo temporalmente en la variables
-     *@param none
-     *@return void no retorna nada
      */
     public void Datos() {
         /**
@@ -52,10 +50,8 @@ public class EscribirArchivo {
         estudiante.setCarrera(carrera);
     }
 
-    /*
-    *Funcion EscribirDatos() Permite el registro de los datos al archivo
-    *@param none
-    *@return void no retorna nada
+    /**
+     *Funcion EscribirDatos() Permite el registro de los datos al archivo
      */
     public void EsribirDatos() {
         /**
