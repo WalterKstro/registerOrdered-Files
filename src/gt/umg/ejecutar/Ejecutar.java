@@ -30,7 +30,7 @@ public class Ejecutar {
      *@param args Array de argumentos
      */
     public static void main(String[] args) {
-        
+
       
         /**
          *Instanciacion de los objetos
