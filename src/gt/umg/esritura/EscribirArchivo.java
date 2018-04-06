@@ -87,7 +87,7 @@ public class EscribirArchivo {
                     datos = linea.split("\\|");
 
                     String c = datos[0].trim();
-                    if (c.equals(carne)) {
+                    while(c.equals(carne)) {
                         System.out.println("\t      ERROR: CARNE YA ESTA EN USO");
                         System.out.println("\t**"+c + "=" + carne+"**");
                         System.out.print("   INGRESE SU CARNÉ: ");
