@@ -84,9 +84,17 @@ public class EscribirArchivo {
                 estudiante.setCarne(carne);
                 while ((linea = br.readLine()) != null) {
 
+                    /**
+                     * Divide cada linea del archivo de entrada.txt en los atributos
+                     * de la clase Estudiante y los almacena en un arreglo,eliminando 
+                     * los espacios en blanco
+                     */
                     datos = linea.split("\\|");
-
                     String c = datos[0].trim();
+                    /**
+                     * Validacion para no tener duplicidad de carnet
+                     * de los alumnos
+                     */
                     while(c.equals(carne)) {
                         System.out.println("\t      ERROR: CARNE YA ESTA EN USO");
                         System.out.println("\t**"+c + "=" + carne+"**");
