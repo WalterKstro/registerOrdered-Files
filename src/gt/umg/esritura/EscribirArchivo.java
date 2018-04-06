@@ -10,7 +10,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-import javax.swing.JOptionPane;
 import umg.gt.ordenacion.estudiantes.EstudiantesCarne;
 
 /**
@@ -89,8 +88,8 @@ public class EscribirArchivo {
 
                     String c = datos[0].trim();
                     if (c.equals(carne)) {
-                        System.out.println("ERROR: CARNE YA ESTA EN USO");
-                        System.out.println(c + "=" + carne);
+                        System.out.println("\t      ERROR: CARNE YA ESTA EN USO");
+                        System.out.println("\t**"+c + "=" + carne+"**");
                         System.out.print("   INGRESE SU CARNÉ: ");
                         carne = txt.nextLine();
                         estudiante.setCarne(carne);
